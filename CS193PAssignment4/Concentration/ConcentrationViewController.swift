@@ -26,8 +26,7 @@ class ConcentrationViewController: UIViewController {
         if let cardNumber = cardButtons.firstIndex(of: sender) {
             game.chooseCard(at: cardNumber)
             updateViewFromModel()
-        }
-        else {
+        } else {
             print("Chosen card was not in cardButtons")
         }
     }

@@ -11,9 +11,9 @@ import UIKit
 class ConcentrationThemeChooserViewController: UIViewController {
     
     let themes = [
-        "Sports" : "⚽️🏀🏈⚾️🥎🏐🏉🏓⛸",
-        "Faces" : "😀😃😄😆😅😂🤣☺️😇",
-        "Animals" : "🐅🦝🦙🦔🦒🦓🦘🐌🐄"
+        "Sports": "⚽️🏀🏈⚾️🥎🏐🏉🏓⛸",
+        "Faces": "😀😃😄😆😅😂🤣☺️😇",
+        "Animals": "🐅🦝🦙🦔🦒🦓🦘🐌🐄"
     ]
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

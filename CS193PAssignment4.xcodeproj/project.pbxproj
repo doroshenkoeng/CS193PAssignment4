@@ -29,11 +29,19 @@
 		A5968652232ABEBE00411344 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5968646232ABEBE00411344 /* Type.swift */; };
 		A5968655232ABF8A00411344 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5968653232ABF8A00411344 /* Main.storyboard */; };
 		A596865D232AC18D00411344 /* CS193PAssignment4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596865C232AC18D00411344 /* CS193PAssignment4Tests.swift */; };
+		A596866C232ACF5500411344 /* CS193PAssignment4UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596866B232ACF5500411344 /* CS193PAssignment4UITests.swift */; };
 		CF127649F067B4825512A8D2 /* Pods_CS193PAssignment4Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DA702B85408C7ECB83AA646 /* Pods_CS193PAssignment4Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		A596865F232AC18D00411344 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5968613232ABD4B00411344 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A596861A232ABD4B00411344;
+			remoteInfo = CS193PAssignment4;
+		};
+		A596866E232ACF5500411344 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A5968613232ABD4B00411344 /* Project object */;
 			proxyType = 1;
@@ -71,6 +79,9 @@
 		A596865A232AC18D00411344 /* CS193PAssignment4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CS193PAssignment4Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A596865C232AC18D00411344 /* CS193PAssignment4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CS193PAssignment4Tests.swift; sourceTree = "<group>"; };
 		A596865E232AC18D00411344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5968669232ACF5500411344 /* CS193PAssignment4UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CS193PAssignment4UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A596866B232ACF5500411344 /* CS193PAssignment4UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CS193PAssignment4UITests.swift; sourceTree = "<group>"; };
+		A596866D232ACF5500411344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD6422351D63C5619CD6604E /* Pods-CS193PAssignment4.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS193PAssignment4.release.xcconfig"; path = "Target Support Files/Pods-CS193PAssignment4/Pods-CS193PAssignment4.release.xcconfig"; sourceTree = "<group>"; };
 		F23C05DFC5DA05087831AFC4 /* Pods-CS193PAssignment4Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS193PAssignment4Tests.release.xcconfig"; path = "Target Support Files/Pods-CS193PAssignment4Tests/Pods-CS193PAssignment4Tests.release.xcconfig"; sourceTree = "<group>"; };
 		FB975B9A25D095A56B716C6D /* Pods-CS193PAssignment4Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CS193PAssignment4Tests.debug.xcconfig"; path = "Target Support Files/Pods-CS193PAssignment4Tests/Pods-CS193PAssignment4Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +104,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A5968666232ACF5500411344 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -101,6 +119,7 @@
 			children = (
 				A596861D232ABD4B00411344 /* CS193PAssignment4 */,
 				A596865B232AC18D00411344 /* CS193PAssignment4Tests */,
+				A596866A232ACF5500411344 /* CS193PAssignment4UITests */,
 				A596861C232ABD4B00411344 /* Products */,
 				FA5F3C3D5FE89EE47F4BE9A3 /* Pods */,
 				CFA36A5C17384183799B5FF9 /* Frameworks */,
@@ -112,6 +131,7 @@
 			children = (
 				A596861B232ABD4B00411344 /* CS193PAssignment4.app */,
 				A596865A232AC18D00411344 /* CS193PAssignment4Tests.xctest */,
+				A5968669232ACF5500411344 /* CS193PAssignment4UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -177,6 +197,15 @@
 			path = CS193PAssignment4Tests;
 			sourceTree = "<group>";
 		};
+		A596866A232ACF5500411344 /* CS193PAssignment4UITests */ = {
+			isa = PBXGroup;
+			children = (
+				A596866B232ACF5500411344 /* CS193PAssignment4UITests.swift */,
+				A596866D232ACF5500411344 /* Info.plist */,
+			);
+			path = CS193PAssignment4UITests;
+			sourceTree = "<group>";
+		};
 		CFA36A5C17384183799B5FF9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -238,6 +267,24 @@
 			productReference = A596865A232AC18D00411344 /* CS193PAssignment4Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A5968668232ACF5500411344 /* CS193PAssignment4UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5968670232ACF5500411344 /* Build configuration list for PBXNativeTarget "CS193PAssignment4UITests" */;
+			buildPhases = (
+				A5968665232ACF5500411344 /* Sources */,
+				A5968666232ACF5500411344 /* Frameworks */,
+				A5968667232ACF5500411344 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A596866F232ACF5500411344 /* PBXTargetDependency */,
+			);
+			name = CS193PAssignment4UITests;
+			productName = CS193PAssignment4UITests;
+			productReference = A5968669232ACF5500411344 /* CS193PAssignment4UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -252,6 +299,10 @@
 						CreatedOnToolsVersion = 10.3;
 					};
 					A5968659232AC18D00411344 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = A596861A232ABD4B00411344;
+					};
+					A5968668232ACF5500411344 = {
 						CreatedOnToolsVersion = 10.3;
 						TestTargetID = A596861A232ABD4B00411344;
 					};
@@ -272,6 +323,7 @@
 			targets = (
 				A596861A232ABD4B00411344 /* CS193PAssignment4 */,
 				A5968659232AC18D00411344 /* CS193PAssignment4Tests */,
+				A5968668232ACF5500411344 /* CS193PAssignment4UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -289,6 +341,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		A5968658232AC18D00411344 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5968667232ACF5500411344 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -393,6 +452,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A5968665232ACF5500411344 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A596866C232ACF5500411344 /* CS193PAssignment4UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -400,6 +467,11 @@
 			isa = PBXTargetDependency;
 			target = A596861A232ABD4B00411344 /* CS193PAssignment4 */;
 			targetProxy = A596865F232AC18D00411344 /* PBXContainerItemProxy */;
+		};
+		A596866F232ACF5500411344 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A596861A232ABD4B00411344 /* CS193PAssignment4 */;
+			targetProxy = A596866E232ACF5500411344 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -619,6 +691,44 @@
 			};
 			name = Release;
 		};
+		A5968671232ACF5500411344 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JWUFUHY6F7;
+				INFOPLIST_FILE = CS193PAssignment4UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Apple.CS193PAssignment4UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CS193PAssignment4;
+			};
+			name = Debug;
+		};
+		A5968672232ACF5500411344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JWUFUHY6F7;
+				INFOPLIST_FILE = CS193PAssignment4UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Apple.CS193PAssignment4UITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CS193PAssignment4;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -645,6 +755,15 @@
 			buildConfigurations = (
 				A5968662232AC18D00411344 /* Debug */,
 				A5968663232AC18D00411344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5968670232ACF5500411344 /* Build configuration list for PBXNativeTarget "CS193PAssignment4UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5968671232ACF5500411344 /* Debug */,
+				A5968672232ACF5500411344 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

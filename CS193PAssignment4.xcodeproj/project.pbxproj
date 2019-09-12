@@ -27,7 +27,18 @@
 		A5968651232ABEBE00411344 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5968645232ABEBE00411344 /* Constants.swift */; };
 		A5968652232ABEBE00411344 /* Type.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5968646232ABEBE00411344 /* Type.swift */; };
 		A5968655232ABF8A00411344 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5968653232ABF8A00411344 /* Main.storyboard */; };
+		A596865D232AC18D00411344 /* CS193PAssignment4Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A596865C232AC18D00411344 /* CS193PAssignment4Tests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A596865F232AC18D00411344 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A5968613232ABD4B00411344 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A596861A232ABD4B00411344;
+			remoteInfo = CS193PAssignment4;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		A596861B232ABD4B00411344 /* CS193PAssignment4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CS193PAssignment4.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,10 +63,20 @@
 		A5968645232ABEBE00411344 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		A5968646232ABEBE00411344 /* Type.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Type.swift; sourceTree = "<group>"; };
 		A5968654232ABF8A00411344 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A596865A232AC18D00411344 /* CS193PAssignment4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CS193PAssignment4Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A596865C232AC18D00411344 /* CS193PAssignment4Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CS193PAssignment4Tests.swift; sourceTree = "<group>"; };
+		A596865E232AC18D00411344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A5968618232ABD4B00411344 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5968657232AC18D00411344 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -69,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				A596861D232ABD4B00411344 /* CS193PAssignment4 */,
+				A596865B232AC18D00411344 /* CS193PAssignment4Tests */,
 				A596861C232ABD4B00411344 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -77,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				A596861B232ABD4B00411344 /* CS193PAssignment4.app */,
+				A596865A232AC18D00411344 /* CS193PAssignment4Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,6 +156,15 @@
 			path = Set;
 			sourceTree = "<group>";
 		};
+		A596865B232AC18D00411344 /* CS193PAssignment4Tests */ = {
+			isa = PBXGroup;
+			children = (
+				A596865C232AC18D00411344 /* CS193PAssignment4Tests.swift */,
+				A596865E232AC18D00411344 /* Info.plist */,
+			);
+			path = CS193PAssignment4Tests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -153,6 +185,24 @@
 			productReference = A596861B232ABD4B00411344 /* CS193PAssignment4.app */;
 			productType = "com.apple.product-type.application";
 		};
+		A5968659232AC18D00411344 /* CS193PAssignment4Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A5968661232AC18D00411344 /* Build configuration list for PBXNativeTarget "CS193PAssignment4Tests" */;
+			buildPhases = (
+				A5968656232AC18D00411344 /* Sources */,
+				A5968657232AC18D00411344 /* Frameworks */,
+				A5968658232AC18D00411344 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A5968660232AC18D00411344 /* PBXTargetDependency */,
+			);
+			name = CS193PAssignment4Tests;
+			productName = CS193PAssignment4Tests;
+			productReference = A596865A232AC18D00411344 /* CS193PAssignment4Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -165,6 +215,10 @@
 				TargetAttributes = {
 					A596861A232ABD4B00411344 = {
 						CreatedOnToolsVersion = 10.3;
+					};
+					A5968659232AC18D00411344 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = A596861A232ABD4B00411344;
 					};
 				};
 			};
@@ -182,6 +236,7 @@
 			projectRoot = "";
 			targets = (
 				A596861A232ABD4B00411344 /* CS193PAssignment4 */,
+				A5968659232AC18D00411344 /* CS193PAssignment4Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -195,6 +250,13 @@
 				A596864E232ABEBE00411344 /* SetAssets.xcassets in Resources */,
 				A5968626232ABD4E00411344 /* Assets.xcassets in Resources */,
 				A5968655232ABF8A00411344 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A5968658232AC18D00411344 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +286,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A5968656232AC18D00411344 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A596865D232AC18D00411344 /* CS193PAssignment4Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A5968660232AC18D00411344 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A596861A232ABD4B00411344 /* CS193PAssignment4 */;
+			targetProxy = A596865F232AC18D00411344 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		A5968627232ABD4E00411344 /* LaunchScreen.storyboard */ = {
@@ -398,6 +476,46 @@
 			};
 			name = Release;
 		};
+		A5968662232AC18D00411344 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JWUFUHY6F7;
+				INFOPLIST_FILE = CS193PAssignment4Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Apple.CS193PAssignment4Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CS193PAssignment4.app/CS193PAssignment4";
+			};
+			name = Debug;
+		};
+		A5968663232AC18D00411344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = JWUFUHY6F7;
+				INFOPLIST_FILE = CS193PAssignment4Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = Apple.CS193PAssignment4Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CS193PAssignment4.app/CS193PAssignment4";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -415,6 +533,15 @@
 			buildConfigurations = (
 				A596862E232ABD4E00411344 /* Debug */,
 				A596862F232ABD4E00411344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A5968661232AC18D00411344 /* Build configuration list for PBXNativeTarget "CS193PAssignment4Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A5968662232AC18D00411344 /* Debug */,
+				A5968663232AC18D00411344 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
